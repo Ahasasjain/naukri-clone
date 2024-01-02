@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Naukri.com</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-white bg-white">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="images/naukri_Logo.png" alt="" class="d-inline-block align-text-top">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-5">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Jobs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Companies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+
+                </ul>
+                <form class="d-flex">
+                    <button class="btn btn-outline-primary round-button mx-2" type="button">Login</button>
+                    <button class="btn btn-danger round-button" type="button">Register</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container-fluid body-background my-5">
+        <div class="container pt-3 ">
+            <div class="row">
+                <div class="col-3 filter">
+                    <div class="card">
+                        <div class="card-body">
+                            <h6 class="text-center">All Filters</h6>
+                        </div>
+
+                        <div class="accordion" id="accordionPanelsStayOpenExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                                        aria-controls="panelsStayOpen-collapseOne">
+                                        Experience
+                                    </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                                    aria-labelledby="panelsStayOpen-headingOne">
+                                    <div class="accordion-body">
+
+                                        <div class="Experience-Slider mx-auto">
+                                            <div class="slider">
+                                                <input type="range" min="0" max="30" value="0" class="form-range col-12"
+                                                    id="customRange1">
+                                                <div class="slider-value" id="rangeValue">0 Years</div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                                        aria-controls="panelsStayOpen-collapseTwo">
+                                        Qualifications
+                                    </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                                    aria-labelledby="panelsStayOpen-headingTwo">
+                                    <div class="accordion-body">
+                                        <div class="form-check">
+                                            <input class="form-check-input Qualifications" type="checkbox" value=""
+                                                id="B.Tech">
+                                            <label class="form-check-label" for="B.Tech">
+                                                Bachelor of Technology (B.Tech)
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input Qualifications" type="checkbox" value=""
+                                                id="M.Tech">
+                                            <label class="form-check-label" for="M.Tech">
+                                                Masters of Technology (M.Tech)
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input Qualifications" type="checkbox" value=""
+                                                id="BCA">
+                                            <label class="form-check-label" for="BCA">
+                                                Bachelors of Computer App (BCA)
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input Qualifications" type="checkbox" value=""
+                                                id="MCA">
+                                            <label class="form-check-label" for="MCA">
+                                                Masters of Computer App (MCA)
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input Qualifications" type="checkbox" value=""
+                                                id="Bsc">
+                                            <label class="form-check-label" for="Bsc">
+                                                Bachelors of Science (Bsc)
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input Qualifications" type="checkbox" value=""
+                                                id="Msc">
+                                            <label class="form-check-label" for="Msc">
+                                                Masters of Science (Msc)
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                                        aria-controls="panelsStayOpen-collapseThree">
+                                        Stream
+                                    </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                                    aria-labelledby="panelsStayOpen-headingThree">
+                                    <div class="accordion-body">
+                                        <div class="form-check">
+                                            <input class="form-check-input Stream" type="checkbox" value=""
+                                                id="Computer">
+                                            <label class="form-check-label" for="Computer">
+                                                Computer Science
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input Stream" type="checkbox" value=""
+                                                id="information">
+                                            <label class="form-check-label" for="information">
+                                                Information Technology
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input Stream" type="checkbox" value=""
+                                                id="Electronics">
+                                            <label class="form-check-label" for="Electronics">
+                                                Electronics and Communication
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input Stream" type="checkbox" value=""
+                                                id="Electrical">
+                                            <label class="form-check-label" for="Electrical">
+                                                Electrical Engineering
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input Stream" type="checkbox" value=""
+                                                id="Mechanical">
+                                            <label class="form-check-label" for="Mechanical">
+                                                Mechanical Engineering
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input Stream" type="checkbox" value="" id="civi">
+                                            <label class="form-check-label" for="Civil">
+                                                Civil Engineering
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input Stream" type="checkbox" value=""
+                                                id="Chemical">
+                                            <label class="form-check-label" for="Chemical">
+                                                Chemical Engineering
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
+                                        aria-controls="panelsStayOpen-collapseFour">
+                                        Location
+                                    </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse"
+                                    aria-labelledby="panelsStayOpen-headingFour">
+                                    <div class="accordion-body">
+                                        <div class="form-check">
+                                            <input class="form-check-input Location" type="checkbox" value=""
+                                                id="Bangalore">
+                                            <label class="form-check-label" for="Bangalore">
+                                                Bangalore, Karnatka
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input Location" type="checkbox" value=""
+                                                id="Hyderabad">
+                                            <label class="form-check-label" for="Hyderabad">
+                                                Hyderabad, Telangana
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input Location" type="checkbox" value=""
+                                                id="Mumbai">
+                                            <label class="form-check-label" for="Mumbai">
+                                                Mumbai, Maharastra
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input Location" type="checkbox" value="" id="Pune">
+                                            <label class="form-check-label" for="Pune">
+                                                Pune, Maharastra
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input Location" type="checkbox" value=""
+                                                id="Indore">
+                                            <label class="form-check-label" for="Indore">
+                                                Indore, Madhya Pradesh
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input Location" type="checkbox" value=""
+                                                id="Bhopal">
+                                            <label class="form-check-label" for="Bhopal">
+                                                Bhopal, Madhya Pradesh
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="panelsStayOpen-headingFive">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false"
+                                        aria-controls="panelsStayOpen-collapseFive">
+                                        Salary
+                                    </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse"
+                                    aria-labelledby="panelsStayOpen-headingFive">
+                                    <div class="accordion-body">
+                                        <div class="form-check">
+                                            <input class="form-check-input Salary" type="checkbox" value="" id="0-3">
+                                            <label class="form-check-label" for="0-3">
+                                                0-3 Lacs
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input Salary" type="checkbox" value="" id="3-6">
+                                            <label class="form-check-label" for="3-6">
+                                                3-6 Lacs
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input Salary" type="checkbox" value="" id="6-10">
+                                            <label class="form-check-label" for="6-10">
+                                                6-10 Lacs
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input Salary" type="checkbox" value="" id="10-15">
+                                            <label class="form-check-label" for="10-15">
+                                                10-15 Lacs
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input Salary" type="checkbox" value="" id="15-20">
+                                            <label class="form-check-label" for="15-20">
+                                                15-20 Lacs
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input Salary" type="checkbox" value="" id="20-25">
+                                            <label class="form-check-label" for="20-25">
+                                                20-25 Lacs
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="col-6  job" id="JobsContainer"></div>
+
+
+
+                <div class="col-3 filter">
+                    <div class="card">
+                        <div class="card-body">
+                            <h6 class="text-center">Top Companies Hiring</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
